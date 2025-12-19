@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mini Calculatrice</h1>
+    </header>
+
+    <main>
+        <section class="calc-card">
+            <form id="calcul">
+             <div class="input-group">
+            <label for="numA">Nombre A</label>
+             <input type="number" id="numA" placeholder="Ex: 20">
+          </div>
+           <div class="input-group">
+                    <label for="operator">Opération</label>
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">−</option>
+                        <option value="*">×</option>
+                        <option value="/">÷</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="numB">Nombre B</label>
+                    <input type="number" id="numB" placeholder="Ex: 2">
+                </div>
+
+                <button type="submit" id="button-calcul" >Calculer</button>
+            </form>
+
+            <div id="errorZone" class="error"></div>
+        </section>
+
+        <section class="history-section">
+            <h2>Historique des opérations</h2>
+            <ul id="historyList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - MINI CALCULATRICE</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
